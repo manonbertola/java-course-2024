@@ -26,9 +26,7 @@ public class Exercise16 {
         String Password = input.next();
         boolean[] passwordValidity = isValidPW(Password);
         System.out.println("password contains at least 8 characters: " + passwordValidity[0] +", has at least 1 digit: " +passwordValidity[1]+ ", and does not contain a period: " +passwordValidity[2]);
-        boolean totValidity = false;
         if (passwordValidity[0] && passwordValidity[1] && passwordValidity[2]){
-            totValidity=true;
             System.out.println("The password meets all requirements");
         }
         else {

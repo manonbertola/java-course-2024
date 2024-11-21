@@ -16,6 +16,6 @@ public class Exercise12 {
 
     public static int daysInMonth(int year, String month) {
         int days = 0;
-        return days
+        return days;
     }
 }

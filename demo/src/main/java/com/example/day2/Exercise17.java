@@ -7,11 +7,13 @@ public class Exercise17 {
         Double [] scores = new Double[100];
         System.out.println(scores);
         int numberOfScores = 100;
-        for (int i=0; i<=100; i++){
-            Scanner input = new Scanner (System.in);
+        Scanner input = new Scanner (System.in);
+        for (int i=0; i<100; i++){
+
             System.out.println("Input a score (entering a negative number concludes the list of scores)");
             Double nextscore = input.nextDouble();
-            input.close();
+
+
             if (nextscore <0){
                 numberOfScores = i-1;
                 break;
@@ -20,11 +22,9 @@ public class Exercise17 {
                 scores[i] = nextscore;
             }
         }
+        input.close();
         for (int i=0; i <= numberOfScores; i++){
             System.out.println("Score " + (i+1) +" is " + scores[i]);
         }
-    
-
-
     }
 }
